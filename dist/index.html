@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Next Shift implanta agentes de IA para que tus procesos sigan avanzando fuera de horario. Empieza con un piloto y mide el tiempo por trámite, los errores y el trabajo pendiente.">
+  <meta name="theme-color" content="#f8fafc">
+  <title>Next Shift — Tu equipo desconecta. La operación sigue.</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
+  <link rel="alternate" hreflang="es" href="index.html">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <script src="contact.js" defer></script>
+  <script src="hero-office.js" defer></script>
+</head>
+<body id="inicio">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header wrap">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="brand" href="#inicio"><img src="images/next-shift-punto-de-relevo.webp" width="640" height="113" alt="Next Shift"></a>
+      <div class="nav-links">
+        <a href="#oportunidades">Flujos</a>
+        <a href="#metodo">Método</a>
+        <a href="#experiencia">Sobre nosotros</a>
+        <a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      </div>
+      <a class="language-link" href="en.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero wrap" aria-labelledby="titulo">
+      <div class="hero-office" aria-hidden="true">
+        <img src="images/next-shift-office-960.webp" srcset="images/next-shift-office-640.webp 640w, images/next-shift-office-960.webp 960w, images/next-shift-office-1536.webp 1536w" sizes="(max-width: 760px) 100vw, (min-width: 1100px) 68vw, 67vw" width="1536" height="1024" alt="" fetchpriority="high">
+        <video muted playsinline preload="none" data-src="images/next-shift-office-night.mp4"></video>
+      </div>
+      <div class="hero-heading">
+        <p class="hero-context">IA agéntica para operaciones</p>
+        <h1 id="titulo">Tu equipo desconecta. <span>La operación sigue.</span></h1>
+      </div>
+      <div class="hero-copy">
+        <p>Implantamos agentes de IA que tramitan pedidos, actualizan el CRM y preparan informes, incluso fuera del horario laboral. Trabajan con tus reglas y avisan a tu equipo cuando una decisión requiere su criterio.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contacto">Cuéntanos qué quieres optimizar <span aria-hidden="true">↗</span></a>
+          <a class="sub-link" href="#oportunidades">Explorar flujos</a>
+          <button class="hero-motion" type="button" hidden data-play="Ver la oficina de noche" data-pause="Pausar la escena" data-resume="Continuar la escena" data-replay="Volver a ver la escena">Ver la oficina de noche</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section examples" id="oportunidades" aria-labelledby="flujos-titulo">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-index"><span aria-hidden="true">01</span> Flujos en marcha</p>
+          <h2 id="flujos-titulo">El lunes no empieza vaciando la bandeja.</h2>
+          <p>Imagina el lunes a las 9:00: los pedidos del fin de semana que cuadraban ya están registrados. Tu equipo empieza por revisar las excepciones, no por teclear cada pedido. Estos tres flujos muestran cómo funciona.</p>
+        </div>
+        <div class="blueprints">
+      <figure class="blueprint">
+        <div class="blueprint-header"><span>01 · Solicitudes</span><span>Ventas</span></div>
+        <div class="diagram" role="img" aria-label="El correo y los formularios alimentan un agente de IA, que consulta el historial del cliente y clasifica la petición. Si está dentro de las reglas, actualiza el CRM; si no, deriva la solicitud al equipo.">
+          <div class="diagram-pair"><div class="diagram-node">Correo</div><div class="diagram-node">Formularios</div></div>
+          <div class="diagram-arrow merge">↓</div>
+          <div class="diagram-node diagram-agent">Agente de IA<span>Consulta el historial y clasifica</span></div>
+          <div class="diagram-arrow split"></div>
+          <div class="diagram-pair">
+            <div class="diagram-branch"><span>↓ En regla</span><div class="diagram-node">Actualiza el CRM</div></div>
+            <div class="diagram-branch"><span>↓ Excepción</span><div class="diagram-node diagram-review">Avisa al equipo</div></div>
+          </div>
+        </div>
+        <figcaption>Por la mañana, el CRM ya está al día y tu equipo solo tiene que revisar las excepciones.</figcaption>
+      </figure>
+      <figure class="blueprint">
+        <div class="blueprint-header"><span>02 · Pedidos</span><span>Operaciones</span></div>
+        <div class="diagram" role="img" aria-label="Al llegar un pedido por correo, el agente coteja las referencias y el stock. Si coinciden, registra el pedido; si no, avisa al equipo.">
+          <div class="diagram-node">Pedido por correo</div>
+          <div class="diagram-arrow">↓</div>
+          <div class="diagram-node diagram-agent">Agente de IA<span>Comprueba catálogo y stock</span></div>
+          <div class="diagram-arrow split"></div>
+          <div class="diagram-pair">
+            <div class="diagram-branch"><span>↓ Coincide</span><div class="diagram-node">Registra el pedido</div></div>
+            <div class="diagram-branch"><span>↓ Discrepancia</span><div class="diagram-node diagram-review">Avisa al equipo</div></div>
+          </div>
+        </div>
+        <figcaption>Los pedidos que encajan quedan registrados sin volver a teclearlos. El equipo recibe los casos dudosos.</figcaption>
+      </figure>
+      <figure class="blueprint">
+        <div class="blueprint-header"><span>03 · Campañas</span><span>Marketing</span></div>
+        <div class="diagram" role="img" aria-label="Cada lunes, el agente cruza el gasto de las campañas con las oportunidades del CRM y publica un informe que indica qué datos faltan.">
+          <div class="diagram-pair"><div class="diagram-node">Campañas</div><div class="diagram-node">CRM</div></div>
+          <div class="diagram-arrow merge">↓</div>
+          <div class="diagram-node diagram-agent">Agente de IA<span>Cruza gasto y oportunidades</span></div>
+          <div class="diagram-arrow">↓ Lun · 06:00</div>
+          <div class="diagram-node">Publica el informe</div>
+        </div>
+        <figcaption>El lunes, el equipo encuentra el informe listo, con los datos que faltan señalados.</figcaption>
+      </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="experiencia">
+      <div class="wrap bio">
+        <div>
+          <p class="section-index"><span aria-hidden="true">02</span> Quién está detrás</p>
+          <h2>Guillermo Ferrer</h2>
+          <figure class="portrait">
+            <img src="images/guillermo-ferrer-480.webp" srcset="images/guillermo-ferrer-480.webp 480w, images/guillermo-ferrer-960.webp 960w" sizes="(max-width: 360px) calc(100vw - 44px), 320px" width="480" height="480" alt="Retrato de Guillermo Ferrer" loading="lazy" decoding="async">
+            <figcaption>Ingeniero de telecomunicaciones · Director de TicTAP</figcaption>
+          </figure>
+        </div>
+        <div>
+          <p>Soy ingeniero de telecomunicaciones y dirijo TicTAP. Llevo más de dos años aplicando inteligencia artificial a productos propios. Esa experiencia me ha enseñado a distinguir una demo que impresiona de un proceso que ahorra trabajo cada semana.</p>
+          <p>También he completado un máster en <a href="https://thebigschool.com/">BIG school</a>, centrado en la automatización de procesos de negocio con IA.</p>
+          <p>Desde Next Shift, diseño e implanto el flujo con tu equipo: conectamos las herramientas, definimos qué puede hacer el agente y dejamos el proceso listo para que podáis supervisarlo y ajustarlo.</p>
+          <div class="products">
+            <article class="product">
+              <h3>TicTAP</h3>
+              <p>Una herramienta para pasar formularios del papel al móvil y llevar un registro de equipos e instalaciones.</p>
+              <a href="https://tictap.me" target="_blank" rel="noopener">Conocer TicTAP ↗</a>
+            </article>
+            <article class="product">
+              <h3>NoteTaker</h3>
+              <p>Convierte lo que cuentas en voz alta en información ordenada, sin tener que teclearlo todo.</p>
+              <a href="https://www.tictap.me/note-taker/" target="_blank" rel="noopener">Conocer NoteTaker ↗</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="metodo">
+      <div class="section-head">
+        <p class="section-index"><span aria-hidden="true">03</span> Cómo trabajamos</p>
+        <h2>Un proceso. Un piloto. Una mejora que puedas medir.</h2>
+        <p>Empezamos por el proceso que más horas consume o más retrasos acumula. Medimos cómo funciona hoy y comparamos el piloto con esa referencia: tiempo por trámite, errores y trabajo pendiente.</p>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="n" aria-hidden="true">01</span><h3>Dibujamos el proceso</h3><p>Identificamos las herramientas, las decisiones y los puntos en los que el trabajo se atasca.</p></li>
+        <li class="step"><span class="n" aria-hidden="true">02</span><h3>Probamos con casos reales</h3><p>Medimos el impacto y probamos qué pasa con las excepciones antes de dar permiso al agente para actuar.</p></li>
+        <li class="step"><span class="n" aria-hidden="true">03</span><h3>Lo dejamos funcionando</h3><p>Si el piloto compensa, activamos el flujo y registramos qué hizo el agente y qué quedó pendiente.</p></li>
+        <li class="step"><span class="n" aria-hidden="true">04</span><h3>Tu equipo se queda al mando</h3><p>Practicamos con tu equipo y dejamos claro cómo pausar el flujo, quién revisa las alertas y cuándo pedir ayuda.</p></li>
+      </ol>
+      <div class="handover">
+        <div><h3>¿Qué os queda al terminar?</h3><p>Una herramienta que entendéis y alguien del equipo que sabe usarla.</p></div>
+        <ul>
+          <li>Una guía con los pasos, qué hace la herramienta y cuándo empieza a trabajar.</li>
+          <li>Los accesos y las responsabilidades de cada persona.</li>
+          <li>Una forma de ver qué está pasando, detectar errores y seguir el gasto, según lo que acordemos.</li>
+          <li>Una sesión práctica y un plan para mantenerlo en marcha.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section faq" id="preguntas">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Preguntas que quizá te estés haciendo</h2>
+        </div>
+        <details><summary>¿Qué cambia si ya usamos ChatGPT o Copilot?</summary><p>En un chat, alguien inicia cada tarea y lleva la respuesta a donde toca. Un agente puede empezar al llegar un correo o a una hora prevista, consultar varias herramientas y ejecutar las acciones que le hayas autorizado.</p></details>
+        <details><summary>¿Cómo sé si compensa?</summary><p>Comparamos el tiempo por trámite, los errores o el volumen pendiente antes y durante el piloto. También contamos el coste de implantar y mantener el flujo. No prometemos una cifra de ahorro antes de medir.</p></details>
+        <details><summary>¿Cuánto cuesta?</summary><p>Depende de lo que quieras resolver. Antes de empezar acordamos el alcance y desglosamos el coste del piloto, las herramientas y el mantenimiento.</p></details>
+        <details><summary>¿Tengo que cambiar las herramientas que ya uso?</summary><p>No necesariamente. Primero vemos si podemos aprovechar lo que tienes. Solo planteamos un cambio si, contando el tiempo y el coste de trasladar la información y mantenerlo, sale a cuenta.</p></details>
+        <details><summary>¿Quién se encarga después?</summary><p>Elegimos a alguien de tu equipo y practicamos juntos. Esa persona sabrá qué puede resolver por su cuenta y para qué necesita ayuda. Si quieres que sigamos acompañándoos, lo acordamos aparte.</p></details>
+        <details><summary>¿Qué pasa con mis datos? ¿Y si la IA se equivoca?</summary><p>Antes de conectar nada, acordamos qué datos se usan, con qué herramientas y quién tendrá acceso. Probamos el sistema antes de incorporarlo al día a día y decidimos qué tiene que revisar una persona.</p></details>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="wrap">
+        <h2>¿Qué proceso optimizarías primero?</h2>
+        <p class="contact-intro">Piensa en uno que acumula retrasos, consume demasiadas horas o se para cuando nadie está pendiente. Cuéntanos cómo funciona hoy y veremos qué parte puede asumir la IA.</p>
+        <form class="contact-form" action="https://formsubmit.co/guillermo.ferrer@tictap.me" method="post" aria-label="Solicitud de contacto">
+          <input type="hidden" name="_subject" value="Next Shift · Nueva solicitud de optimización">
+          <input type="hidden" name="_blacklist" value="buy backlinks,casino bonus,viagra online,crypto giveaway">
+          <div hidden>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-label="Deja este campo vacío">
+            <input type="text" id="contact-website" tabindex="-1" autocomplete="off" aria-label="Sitio web (dejar vacío)">
+          </div>
+          <p class="contact-note" id="contact-status" role="status">Completa los campos obligatorios y marca el consentimiento para poder enviar. Solo el teléfono es opcional.</p>
+          <div class="contact-fields">
+            <div class="contact-field">
+              <label for="contact-company">Nombre de la empresa</label>
+              <input id="contact-company" name="empresa" type="text" autocomplete="organization" maxlength="160" required>
+            </div>
+            <div class="contact-field">
+              <label for="contact-size">Número de trabajadores</label>
+              <select id="contact-size" name="numero_trabajadores" required>
+                <option value="" selected disabled>Selecciona un rango</option>
+                <option value="0">0 · Sin plantilla</option>
+                <option value="1–9">1–9</option>
+                <option value="10–49">10–49</option>
+                <option value="50–249">50–249</option>
+                <option value="250 o más">250 o más</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">Correo electrónico</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          </div>
+          <div class="contact-field">
+            <label for="contact-phone">Teléfono <span>(opcional)</span></label>
+            <input id="contact-phone" name="telefono" type="tel" autocomplete="tel" maxlength="35" aria-describedby="contact-phone-hint">
+            <p class="contact-note" id="contact-phone-hint">Si lo indicas, puedes incluir el prefijo internacional. Ejemplo: +34 612 345 678.</p>
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Cuéntanos qué proceso quieres optimizar</label>
+            <textarea id="contact-message" name="mensaje" rows="4" maxlength="2000" required></textarea>
+          </div>
+          <label class="contact-consent" for="contact-consent">
+            <input id="contact-consent" name="consentimiento" type="checkbox" value="Sí, autorizo el contacto comercial exclusivamente para esta solicitud" required aria-describedby="contact-privacy">
+            <span>Autorizo a Guillermo Ferrer a usar estos datos para contactarme con fines comerciales exclusivamente en relación con esta solicitud.</span>
+          </label>
+          <p class="contact-note" id="contact-privacy">El envío se tramita a través de <a href="https://formsubmit.co/privacy.pdf">FormSubmit</a>. No te suscribe a boletines ni a otras comunicaciones comerciales.</p>
+          <button class="btn" type="submit" aria-describedby="contact-status" disabled>Enviar solicitud <span aria-hidden="true">↗</span></button>
+          <noscript><p class="contact-note">Activa JavaScript para poder enviar el formulario.</p></noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>Next Shift · Implantación de IA agéntica</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+
+</body>
+</html>
