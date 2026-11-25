@@ -6,6 +6,7 @@
   <meta name="description" content="Next Shift deploys AI agents that keep your operations moving after hours. Start with one workflow and measure the impact on processing time, errors and backlog.">
   <meta name="theme-color" content="#f8fafc">
   <title>Next Shift — Your team clocks out. Work keeps moving.</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap">
   <link rel="stylesheet" href="site.css">
   <link rel="alternate" hreflang="es" href="index.html">
@@ -21,7 +22,7 @@
       <div class="nav-links">
         <a href="#workflows">Workflows</a>
         <a href="#approach">Approach</a>
-        <a href="#about">About</a>
+        <a href="#about">Team</a>
         <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
       </div>
       <a class="language-link" href="index.html" hreflang="es" lang="es">Español</a>
@@ -99,20 +100,31 @@
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <div class="wrap bio">
-        <div>
-          <p class="section-index"><span aria-hidden="true">02</span> Behind Next Shift</p>
-          <h2>Guillermo Ferrer</h2>
-          <figure class="portrait">
-            <img src="images/guillermo-ferrer-480.webp" srcset="images/guillermo-ferrer-480.webp 480w, images/guillermo-ferrer-960.webp 960w" sizes="(max-width: 360px) calc(100vw - 44px), 360px" width="480" height="480" alt="Portrait of Guillermo Ferrer" loading="lazy" decoding="async">
-            <figcaption>Telecommunications engineer · Director of TicTAP</figcaption>
-          </figure>
+    <section class="section about" id="about" aria-labelledby="team-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="section-index"><span aria-hidden="true">02</span> About us</p>
+          <h2 id="team-title">The Next Shift team</h2>
+          <p>We design and implement AI workflows with you. We connect your tools, define what each agent can do, and make sure your team can monitor and adjust the workflow.</p>
         </div>
-        <div>
-          <p>I'm a telecommunications engineer and I run TicTAP. I've spent more than two years putting AI to work in products I've built. That taught me the difference between a demo that impresses and a workflow that saves time every week.</p>
-          <p>I also completed a master's program at <a href="https://thebigschool.com/">BIG school</a> focused on automating business processes with AI.</p>
-          <p>At Next Shift, I design and implement workflows with your team. We connect your tools, define what the agent can do and make sure your team can monitor and adjust the workflow.</p>
+        <div class="team-grid">
+          <article class="team-member">
+            <img class="team-portrait" src="images/guillermo-ferrer-480.webp" srcset="images/guillermo-ferrer-480.webp 480w, images/guillermo-ferrer-960.webp 960w" sizes="(max-width: 580px) calc(100vw - 44px), 33vw" width="480" height="480" alt="" loading="lazy" decoding="async">
+            <h3>Guillermo Ferrer</h3>
+            <p>Telecommunications engineer · Director of TicTAP</p>
+          </article>
+          <article class="team-member">
+            <div class="team-portrait team-initials" aria-hidden="true">GB</div>
+            <h3>Guillermo B.</h3>
+          </article>
+          <article class="team-member">
+            <div class="team-portrait team-initials" aria-hidden="true">JS</div>
+            <h3>Javier S.</h3>
+          </article>
+        </div>
+        <details class="team-experience">
+          <summary>More about Guillermo Ferrer's experience</summary>
+          <p>Guillermo has spent more than two years putting AI to work in products he has built. He completed a master's program at <a href="https://thebigschool.com/">BIG school</a> focused on automating business processes with AI.</p>
           <div class="products">
             <article class="product">
               <h3>TicTAP</h3>
@@ -125,7 +137,7 @@
               <a href="https://www.tictap.me/note-taker/" target="_blank" rel="noopener">Explore NoteTaker ↗</a>
             </article>
           </div>
-        </div>
+        </details>
       </div>
     </section>
 
