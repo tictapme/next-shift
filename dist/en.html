@@ -3,239 +3,193 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Next Shift deploys AI agents that keep your operations moving after hours. Start with one workflow and measure the impact on processing time, errors and backlog.">
-  <meta name="theme-color" content="#f8fafc">
-  <title>Next Shift — Your team clocks out. Work keeps moving.</title>
+  <title>Next Shift by TicTAP | AI for maintenance and health &amp; safety</title>
+  <meta name="description" content="TicTAP's AI consultancy for maintenance contractors, industrial plants, facility services and HSE teams. Measurable pilots for field reports, shift handovers and corrective actions.">
+  <meta name="theme-color" content="#102337">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="Next Shift by TicTAP">
+  <meta property="og:title" content="Next Shift by TicTAP | AI for maintenance and health &amp; safety">
+  <meta property="og:description" content="From field reports to shift handover and corrective action follow-up. One workflow, one measurable pilot, with your team in control.">
+  <meta property="og:image" content="/images/share-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Next Shift by TicTAP. Shift handover demo: Pump B-14, review pending.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap">
-  <link rel="stylesheet" href="site.css">
   <link rel="alternate" hreflang="es" href="index.html">
   <link rel="alternate" hreflang="en" href="en.html">
+  <link rel="stylesheet" href="site.css">
+  <script src="demo.js" defer></script>
   <script src="contact.js" defer></script>
-  <script src="hero-office.js" defer></script>
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header wrap">
-    <nav class="site-nav" aria-label="Main navigation">
-      <a class="brand" href="#top"><img src="images/next-shift-punto-de-relevo.webp" width="640" height="113" alt="Next Shift"></a>
-      <div class="nav-links">
-        <a href="#workflows">Workflows</a>
-        <a href="#approach">Approach</a>
-        <a href="#about">Team</a>
-        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
-      </div>
-      <a class="language-link" href="index.html" hreflang="es" lang="es">Español</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top"><span class="brand-main"><img src="images/next-shift-mark.svg" width="28" height="28" alt="">Next Shift</span><span class="brand-by">by <img src="images/tictap-official.svg" width="180" height="69" alt="TicTAP"></span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#maintenance">Maintenance</a><a href="#hse">Health &amp; safety</a><a href="#tictap">Already use TicTAP?</a><a href="#approach">Approach</a>
+      </nav>
+      <div class="header-actions"><a href="index.html" hreflang="es" lang="es">Español</a><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+    </div>
   </header>
-
   <main id="main">
-    <section class="hero wrap" aria-labelledby="title">
-      <div class="hero-office" aria-hidden="true">
-        <img src="images/next-shift-office-960.webp" srcset="images/next-shift-office-640.webp 640w, images/next-shift-office-960.webp 960w, images/next-shift-office-1536.webp 1536w" sizes="(max-width: 760px) 100vw, (min-width: 1100px) 68vw, 67vw" width="1536" height="1024" alt="" fetchpriority="high">
-        <video muted playsinline preload="none" data-src="images/next-shift-office-night.mp4"></video>
-      </div>
-      <div class="hero-heading">
-        <p class="hero-context">Agentic AI for operations</p>
-        <h1 id="title">Your team clocks out. <span>Work keeps moving.</span></h1>
-      </div>
-      <div class="hero-copy">
-        <p>We deploy AI agents that process orders, update your CRM and prepare reports, even after hours. They follow your rules and flag decisions that need your team's judgment.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#contact">Tell us what you'd like to improve <span aria-hidden="true">↗</span></a>
-          <a class="sub-link" href="#workflows">Explore workflows</a>
-          <button class="hero-motion" type="button" hidden data-play="See the office after dark" data-pause="Pause the scene" data-resume="Resume the scene" data-replay="Replay the scene">See the office after dark</button>
+    <section class="hero" aria-labelledby="title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">TicTAP’s AI consultancy for maintenance and health &amp; safety</p>
+          <h1 id="title">From field reports to shift handover and action follow-up</h1>
+          <p class="hero-intro">We help maintenance contractors, industrial plants and health and safety teams make better use of what they already record. We implement workflows that prepare reports, bring together outstanding shift tasks and show which actions are still open. Your team reviews the information and makes the decisions.</p>
+          <div class="hero-actions"><a class="btn" href="#contact">Let’s talk about your workflow <span aria-hidden="true">↗</span></a><a class="hero-link" href="#examples">See maintenance and HSE examples <span aria-hidden="true">↓</span></a></div>
+        </div>
+        <div class="supervisor" data-demo>
+          <div class="supervisor-bar"><span>Supervisor view</span><span>Shift handover demo</span></div>
+          <div class="supervisor-body">
+            <p class="eyebrow">Pumping equipment / B-14</p>
+            <h2 data-stage>Pump B-14 <span class="status">Review pending</span></h2>
+            <dl class="supervisor-log">
+              <div data-stage><dt>Previous shift</dt><dd>The casing was visually inspected. No running test was logged.</dd></div>
+              <div data-stage><dt>To check</dt><dd>Confirm whether the test was carried out and check the result against the work order.</dd></div>
+            </dl>
+            <details class="source"><summary>View the original demo record · WO-148</summary><p>Shift note: “Casing inspected. No running test recorded at handover.”</p></details>
+          </div>
+          <p class="supervisor-foot">Fictional data · The summary supports the handover conversation</p>
         </div>
       </div>
     </section>
 
-    <section class="section examples" id="workflows" aria-labelledby="workflows-title">
+    <section class="section examples" id="examples" aria-labelledby="examples-title">
       <div class="wrap">
-        <div class="section-head">
-          <p class="section-index"><span aria-hidden="true">01</span> Workflows in action</p>
-          <h2 id="workflows-title">Monday doesn't start with clearing the inbox.</h2>
-          <p>Picture Monday at 9 a.m. The weekend orders that passed the checks are already logged. Your team starts by reviewing exceptions, not typing in every order. Here are three ways it works.</p>
-        </div>
-        <div class="blueprints">
-          <figure class="blueprint">
-            <div class="blueprint-header"><span>01 · Inquiries</span><span>Sales</span></div>
-            <div class="diagram" role="img" aria-label="The AI agent reads emails and form submissions, checks the customer history and classifies the inquiry. It updates the CRM when the rules are met and flags exceptions for the team.">
-              <div class="diagram-pair"><div class="diagram-node">Email</div><div class="diagram-node">Forms</div></div>
-              <div class="diagram-arrow merge">↓</div>
-              <div class="diagram-node diagram-agent">AI agent<span>Checks history and classifies</span></div>
-              <div class="diagram-arrow split"></div>
-              <div class="diagram-pair">
-                <div class="diagram-branch"><span>↓ Meets rules</span><div class="diagram-node">Updates CRM</div></div>
-                <div class="diagram-branch"><span>↓ Exception</span><div class="diagram-node diagram-review">Alerts the team</div></div>
-              </div>
-            </div>
-            <figcaption>By morning, the CRM is up to date and the team only needs to review exceptions.</figcaption>
-          </figure>
-          <figure class="blueprint">
-            <div class="blueprint-header"><span>02 · Orders</span><span>Operations</span></div>
-            <div class="diagram" role="img" aria-label="When an order arrives by email, the AI agent checks the product codes and stock. It logs matching orders and alerts the team to discrepancies.">
-              <div class="diagram-node">Order email</div>
-              <div class="diagram-arrow">↓</div>
-              <div class="diagram-node diagram-agent">AI agent<span>Checks catalog and stock</span></div>
-              <div class="diagram-arrow split"></div>
-              <div class="diagram-pair">
-                <div class="diagram-branch"><span>↓ Match</span><div class="diagram-node">Logs the order</div></div>
-                <div class="diagram-branch"><span>↓ Mismatch</span><div class="diagram-node diagram-review">Alerts the team</div></div>
-              </div>
-            </div>
-            <figcaption>Orders that pass the checks are logged without retyping. The team gets the cases that need a closer look.</figcaption>
-          </figure>
-          <figure class="blueprint">
-            <div class="blueprint-header"><span>03 · Campaigns</span><span>Marketing</span></div>
-            <div class="diagram" role="img" aria-label="Every Monday, the AI agent compares campaign spending with CRM opportunities and publishes a report that flags missing data.">
-              <div class="diagram-pair"><div class="diagram-node">Campaigns</div><div class="diagram-node">CRM</div></div>
-              <div class="diagram-arrow merge">↓</div>
-              <div class="diagram-node diagram-agent">AI agent<span>Links spend to opportunities</span></div>
-              <div class="diagram-arrow">↓ Mon · 06:00</div>
-              <div class="diagram-node">Publishes the report</div>
-            </div>
-            <figcaption>The Monday report is ready before the team logs in, with any missing data clearly flagged.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about" id="about" aria-labelledby="team-title">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="section-index"><span aria-hidden="true">02</span> About us</p>
-          <h2 id="team-title">The Next Shift team</h2>
-          <p>We design and implement AI workflows with you. We connect your tools, define what each agent can do, and make sure your team can monitor and adjust the workflow.</p>
-        </div>
-        <div class="team-grid">
-          <article class="team-member">
-            <img class="team-portrait" src="images/guillermo-ferrer-480.webp" srcset="images/guillermo-ferrer-480.webp 480w, images/guillermo-ferrer-960.webp 960w" sizes="(max-width: 580px) calc(100vw - 44px), (max-width: 800px) 50vw, 25vw" width="480" height="480" alt="" loading="lazy" decoding="async">
-            <h3>Guillermo Ferrer</h3>
-            <p>Telecommunications engineer · Director of TicTAP</p>
-          </article>
-          <article class="team-member">
-            <div class="team-portrait team-initials" aria-hidden="true">GB</div>
-            <h3>Guillermo B.</h3>
-          </article>
-          <article class="team-member">
-            <div class="team-portrait team-initials" aria-hidden="true">JS</div>
-            <h3>Javier S.</h3>
-          </article>
-          <article class="team-member">
-            <div class="team-portrait team-initials" aria-hidden="true">JZ</div>
-            <h3>Ji Zhang</h3>
-            <a class="team-link" href="https://www.linkedin.com/in/ji-zhang-3b02b822/">Ji Zhang on LinkedIn <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-        <details class="team-experience">
-          <summary>More about Guillermo Ferrer's experience</summary>
-          <p>Guillermo has spent more than two years putting AI to work in products he has built. He completed a master's program at <a href="https://thebigschool.com/">BIG school</a> focused on automating business processes with AI.</p>
-          <div class="products">
-            <article class="product">
-              <h3>TicTAP</h3>
-              <p>Move paper forms to mobile and keep records of equipment and facilities.</p>
-              <a href="https://tictap.me" target="_blank" rel="noopener">Explore TicTAP ↗</a>
+        <div class="section-head"><p class="eyebrow"><span>01</span> / Demonstrations</p><h2 id="examples-title">What happens after the field record</h2><p>Fictional examples for maintenance contractors, industrial plants, facility services and health and safety (HSE) teams.</p></div>
+        <section class="example-group" id="maintenance" aria-labelledby="maintenance-title">
+          <h3 class="group-heading" id="maintenance-title">Maintenance</h3>
+          <div class="example-grid">
+            <article class="example" data-demo>
+              <span class="badge consulting">Next Shift by TicTAP implementation example</span>
+              <h4>From voice note to service report</h4>
+              <ol class="demo-flow">
+                <li data-stage><b>Dictation</b><span>“I replaced the valve gasket and checked that the valve closed properly.”</span></li>
+                <li data-stage><b>Field record in TicTAP</b><span>Note Taker fills in the form fields. The technician checks, corrects and validates the record.</span></li>
+                <li data-stage><b>Client report</b><span>The validated record feeds the agreed report template. <mark>Labour hours and materials: awaiting confirmation</mark>.</span></li>
+              </ol>
+              <p class="measure"><strong>What we measure.</strong> Office minutes per report, records sent back for correction and time until the client documentation is ready.</p>
+              <p class="product-note"><span class="badge available">Available in TicTAP</span> <a href="https://www.tictap.me/en/note-taker/">Note Taker for maintenance forms</a>.</p>
             </article>
-            <article class="product">
-              <h3>NoteTaker</h3>
-              <p>Turn spoken notes into structured information without typing everything out.</p>
-              <a href="https://www.tictap.me/note-taker/" target="_blank" rel="noopener">Explore NoteTaker ↗</a>
+            <article class="example" id="shift-handover" data-demo>
+              <span class="badge consulting">Next Shift by TicTAP implementation example</span>
+              <h4>Preparing a shift handover</h4>
+              <p>We bring work orders and notes into one view so the outgoing and incoming shifts can cross-check them together.</p>
+              <dl class="record" data-stage><div><dt>Asset</dt><dd>Pump B-14</dd></div><div><dt>Last action</dt><dd>Visual check of the casing</dd></div><div><dt>Outstanding</dt><dd>Confirm the test status</dd></div></dl>
+              <div class="exception" data-stage><strong>Two sources disagree</strong><ul><li><b>Work order WO-148:</b> no test recorded.</li><li><b>Shift note:</b> test carried out; result not attached.</li></ul><p>Both versions are shown. The team checks the source records and decides what to do next.</p></div>
+              <p class="measure"><strong>What we measure.</strong> Preparation time, queries to the previous shift and outstanding tasks missed when the summary is checked against the source records.</p>
             </article>
           </div>
-        </details>
+        </section>
+        <section class="example-group" id="hse" aria-labelledby="safety-title">
+          <h3 class="group-heading safety-heading" id="safety-title">Health &amp; safety / HSE</h3>
+          <article class="example example-wide" data-demo>
+            <div>
+              <span class="badge consulting">Next Shift by TicTAP implementation example</span>
+              <h4>From observation to corrective action follow-up</h4>
+              <ol class="demo-flow">
+                <li data-stage><b>Inspection</b><span>“Signage is missing at the entrance to Warehouse 2.” The inspector attaches a photo.</span></li>
+                <li data-stage><b>Action record</b><span>AI brings together the original wording, location and evidence. The competent professional assesses the situation and sets the corrective action, owner and due date.</span></li>
+                <li data-stage><b>New evidence</b><span>When a follow-up photo arrives, the record moves to <mark>Pending verification</mark>. The responsible professional checks the evidence and decides whether to approve closure.</span></li>
+              </ol>
+              <p class="measure"><strong>What we measure.</strong> Time to assign an owner, overdue corrective actions and actions still awaiting verification.</p>
+            </div>
+            <figure class="evidence"><img src="images/warehouse-evidence.svg" width="480" height="320" alt="Illustration of the Warehouse 2 entrance with no signage on the wall next to the door" loading="lazy"><figcaption><b>Warehouse 2 · Initial evidence</b><span>Simulated attachment for this demonstration</span></figcaption></figure>
+          </article>
+        </section>
+        <section class="example-group" id="tictap" aria-labelledby="stock-title">
+          <h3 class="group-heading product-heading" id="stock-title">If you already use TicTAP</h3>
+          <article class="example example-wide" data-demo>
+            <div>
+              <span class="badge available">Available in TicTAP</span>
+              <h4>Find and issue stock by voice</h4>
+              <blockquote>“I’m taking three tubes of kitchen and bathroom silicone.”</blockquote>
+              <p>Note Taker interprets a stock issue of three units and looks up the item in the selected storeroom. <a href="https://www.tictap.me/en/plugin-stock/">See the TicTAP Stock plugin</a>.</p>
+              <p class="product-note"><span class="badge consulting">Tailored extension with Next Shift by TicTAP</span> We can assess how to allocate that material to a specific work order or connect the movement to your ERP. We agree the scope after checking what is feasible.</p>
+            </div>
+            <div class="stock-demo">
+              <p class="eyebrow">Demo movement / Selected storeroom</p>
+              <dl class="record" data-stage><div><dt>Movement</dt><dd>Stock issue · 3 units</dd></div><div><dt>Suggested item</dt><dd>SIL-CB-300 · White silicone</dd></div><div><dt>Another match</dt><dd>SIL-CT-300 · Clear silicone</dd></div></dl>
+              <p class="exception" data-stage><strong>To confirm in this demo:</strong> the operator chooses the item before recording the stock issue.</p>
+            </div>
+          </article>
+        </section>
+        <p class="boundary">Risk assessment, work authorisation and approval of closure remain the responsibility of the appropriate professionals.</p>
       </div>
     </section>
 
-    <section class="section wrap" id="approach">
-      <div class="section-head">
-        <p class="section-index"><span aria-hidden="true">03</span> How we work</p>
-        <h2>One process. One pilot. An improvement you can measure.</h2>
-        <p>We start with the process that takes the most time or causes the longest delays. We establish a baseline and compare the pilot against it: time per task, errors and backlog.</p>
+    <section class="section decisions" aria-labelledby="questions-title">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow"><span>02</span> / The coordination work</p><h2 id="questions-title">What happens after the field report is submitted?</h2></div>
+        <dl class="role-grid">
+          <div><dt>Service manager</dt><dd>Does someone in the office rewrite what the technician already recorded before the report can go to the client?</dd></div>
+          <div><dt>Maintenance manager</dt><dd>When the shift changes, how does the team know which job was left unfinished and where to find the latest reliable information?</dd></div>
+          <div><dt>Health and safety manager</dt><dd>Of the actions marked as completed, which ones are still waiting for someone to verify the evidence?</dd></div>
+          <div><dt>Operations director</dt><dd>If this contract grows or you take on another site, which administrative task grows with it?</dd></div>
+        </dl>
+        <div class="baseline"><h3>How we’ll know if it’s worth it</h3><p>For each pilot, we sample the current work and compare it with the new workflow, including review time and ongoing costs. You can then decide whether it frees up coordination hours, gets client reports out sooner or gives you capacity to take on another contract.</p></div>
       </div>
+    </section>
+
+    <section class="section wrap" id="approach" aria-labelledby="method-title">
+      <div class="section-head"><p class="eyebrow"><span>03</span> / Approach</p><h2 id="method-title">One workflow. One measurable pilot.</h2><p>We study your workflow, check which tools can connect and implement the solution if the pilot makes a business case. You can start with TicTAP, a CMMS, an ERP or another inspection tool.</p></div>
       <ol class="steps">
-        <li class="step"><span class="n" aria-hidden="true">01</span><h3>Map the process</h3><p>We identify the tools, the decisions and the points where work gets stuck.</p></li>
-        <li class="step"><span class="n" aria-hidden="true">02</span><h3>Test with real cases</h3><p>We measure the impact and test how exceptions are handled before authorizing the agent to act.</p></li>
-        <li class="step"><span class="n" aria-hidden="true">03</span><h3>Put it into operation</h3><p>If the pilot pays off, we activate the workflow and keep a record of what the agent did and what remains open.</p></li>
-        <li class="step"><span class="n" aria-hidden="true">04</span><h3>Keep your team in control</h3><p>We train your team and agree on how to pause the workflow, who reviews alerts and when to ask for help.</p></li>
+        <li><span aria-hidden="true">01</span><h3>See how you work today</h3><p>We talk to both the person who writes the field report and the person who receives it. We look at sources, access and duplicated work.</p></li>
+        <li><span aria-hidden="true">02</span><h3>Test with real records</h3><p>Once data handling and permissions are agreed, we test an authorised sample, including incomplete or conflicting records.</p></li>
+        <li><span aria-hidden="true">03</span><h3>Compare time, quality and exceptions</h3><p>We cross-check the results against the source, count corrections and include the time your team spends reviewing.</p></li>
+        <li><span aria-hidden="true">04</span><h3>Agree what goes live and who oversees it</h3><p>We clarify permissions, responsibilities, alerts, how to pause the workflow and when to get help. Your team gets a hands-on session.</p></li>
       </ol>
-      <div class="handover">
-        <div><h3>What do you get at handover?</h3><p>A workflow your team understands and someone who knows how to run it.</p></div>
-        <ul>
-          <li>A guide to the workflow, what it does and what triggers it.</li>
-          <li>Clear access permissions and responsibilities.</li>
-          <li>A way to review activity, spot errors and track spending, based on what we agree.</li>
-          <li>A hands-on session and a plan to keep it running.</li>
+    </section>
+
+    <section class="section team" id="about" aria-labelledby="team-title">
+      <div class="wrap team-layout">
+        <div class="section-head"><p class="eyebrow"><span>04</span> / Team</p><h2 id="team-title">The Next Shift by TicTAP team</h2><p>Next Shift by TicTAP is the consultancy brand of <a href="https://www.tictap.me/">TicTAP</a>, whose platform is used to record field reports, inspections, assets and inventory movements on site.</p></div>
+        <ul class="team-grid">
+          <li><img src="images/guillermo-ferrer-480.webp" width="480" height="480" alt="" loading="lazy"><strong>Guillermo Ferrer</strong></li>
+          <li><span class="initials" aria-hidden="true">GB</span><strong>Guillermo B.</strong></li>
+          <li><span class="initials" aria-hidden="true">JS</span><strong>Javier S.</strong></li>
         </ul>
       </div>
     </section>
 
-    <section class="section faq" id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Questions you might have</h2>
-        </div>
-        <details><summary>What changes if we already use ChatGPT or Copilot?</summary><p>In a chat, someone starts each task and takes the answer wherever it needs to go. An agent can start when an email arrives or on a schedule, check several tools and carry out actions you've authorized.</p></details>
-        <details><summary>How do I know if it's worth it?</summary><p>We compare time per task, errors or backlog before and during the pilot. We also account for the cost of implementation and maintenance. We don't promise a savings figure before we've measured it.</p></details>
-        <details><summary>How much does it cost?</summary><p>It depends on the process. Before starting, we agree on the scope and break down the costs of the pilot, tools and maintenance.</p></details>
-        <details><summary>Do I need to replace my current tools?</summary><p>Not necessarily. We first see what we can do with the tools you already use. We only recommend a change if it makes sense after accounting for migration and maintenance.</p></details>
-        <details><summary>Who looks after it afterward?</summary><p>We work with someone on your team so they know what they can handle and when to ask for help. Ongoing support can be agreed separately.</p></details>
-        <details><summary>What about my data? What if the AI makes a mistake?</summary><p>Before connecting anything, we agree on what data the agent can use, which tools it can access and who has permission. We test the workflow before launch and agree on what a person needs to review.</p></details>
+    <section class="section wrap faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-head"><p class="eyebrow"><span>05</span> / FAQs</p><h2 id="faq-title">Before you start</h2></div>
+      <div class="faq-list">
+        <details><summary>What can I do if I already use TicTAP?</summary><p>You can use Note Taker to fill in forms by voice and add the Stock plugin to record material movements. We can look at using the reports and inspections you already log to build a client-specific report, shift handover or action follow-up.</p></details>
+        <details><summary>Can you work with our CMMS or ERP?</summary><p>You don’t have to use TicTAP. We check what your maintenance system, ERP or inspection tool supports, including exports, APIs, permissions and data quality. We only propose integrations that are feasible for your case.</p></details>
+        <details><summary>What happens if information is missing or the AI gets it wrong?</summary><p>The workflow flags missing fields and conflicting records and keeps the original source at hand so someone can correct the draft. Before connecting anything, we agree which data is processed, which tools are used and who can access it.</p></details>
+        <details><summary>Who reviews health and safety actions?</summary><p>A competent professional assesses the risk and sets the action, owner and deadline. The authorised person verifies the evidence and approves closure. AI organises information; it does not assess risks, authorise work or close actions on its own.</p></details>
+        <details><summary>How are the pilot and ongoing maintenance priced?</summary><p>Before we start, we agree the scope and itemise the pilot, tools and ongoing maintenance. Your team gets a guide and a hands-on session. Any continuing support is agreed separately.</p></details>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="wrap">
-        <h2>Which process would you improve first?</h2>
-        <p class="contact-intro">Think of a process that causes delays, takes too many hours or stops when no one is watching. Tell us how it works today and we'll look at what AI could take on.</p>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-layout">
+        <div class="section-head"><p class="eyebrow"><span>06</span> / Contact</p><h2 id="contact-title">Which field report, shift handover or inspection would you like to simplify?</h2><p>For a first conversation, just tell us how the process works today. Please don’t send actual reports, incident photos or worker data.</p></div>
         <form class="contact-form" action="https://formsubmit.co/guillermo.ferrer@tictap.me" method="post" aria-label="Contact request">
-          <input type="hidden" name="_subject" value="Next Shift · New workflow inquiry (EN)">
+          <input type="hidden" name="_subject" value="Next Shift by TicTAP · New workflow enquiry">
           <input type="hidden" name="_blacklist" value="buy backlinks,casino bonus,viagra online,crypto giveaway">
-          <div hidden>
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-label="Leave this field blank">
-            <input type="text" id="contact-website" tabindex="-1" autocomplete="off" aria-label="Website (leave blank)">
-          </div>
-          <p class="contact-note" id="contact-status" role="status">Fill in the required fields and check the consent box to send your request. Only the phone number is optional.</p>
+          <div hidden><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-label="Leave this field blank"><input type="text" id="contact-website" tabindex="-1" autocomplete="off" aria-label="Website (leave blank)"></div>
           <div class="contact-fields">
-            <div class="contact-field">
-              <label for="contact-company">Company name</label>
-              <input id="contact-company" name="empresa" type="text" autocomplete="organization" maxlength="160" required>
-            </div>
-            <div class="contact-field">
-              <label for="contact-size">Number of employees</label>
-              <select id="contact-size" name="numero_trabajadores" required>
-                <option value="" selected disabled>Select a range</option>
-                <option value="0">0 · No employees</option>
-                <option value="1–9">1–9</option>
-                <option value="10–49">10–49</option>
-                <option value="50–249">50–249</option>
-                <option value="250 o más">250 or more</option>
-              </select>
-            </div>
+            <div class="contact-field"><label for="contact-company">Company name</label><input id="contact-company" name="empresa" autocomplete="organization" maxlength="160" required></div>
+            <div class="contact-field"><label for="contact-area">Area</label><select id="contact-area" name="area" required><option value="" selected disabled>Choose an area</option><option value="Mantenimiento">Maintenance</option><option value="PRL/HSE">Health &amp; safety / HSE</option><option value="Operaciones">Operations</option><option value="Otra">Other</option></select></div>
+            <div class="contact-field"><label for="contact-email">Email address</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+            <div class="contact-field"><label for="contact-phone">Phone <span>(optional)</span></label><input id="contact-phone" name="telefono" type="tel" autocomplete="tel" maxlength="35"></div>
           </div>
-          <div class="contact-field">
-            <label for="contact-email">Email address</label>
-            <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
-          </div>
-          <div class="contact-field">
-            <label for="contact-phone">Phone <span>(optional)</span></label>
-            <input id="contact-phone" name="telefono" type="tel" autocomplete="tel" maxlength="35" aria-describedby="contact-phone-hint">
-            <p class="contact-note" id="contact-phone-hint">You can include your country code. For example: +34 612 345 678.</p>
-          </div>
-          <div class="contact-field">
-            <label for="contact-message">Which process would you like to improve?</label>
-            <textarea id="contact-message" name="mensaje" rows="4" maxlength="2000" required></textarea>
-          </div>
-          <label class="contact-consent" for="contact-consent">
-            <input id="contact-consent" name="consentimiento" type="checkbox" value="Yes, I consent to commercial contact only in relation to this inquiry" required aria-describedby="contact-privacy">
-            <span>I authorize Guillermo Ferrer to use this information to contact me for commercial purposes only in relation to this inquiry.</span>
-          </label>
-          <p class="contact-note" id="contact-privacy">Your request is processed through <a href="https://formsubmit.co/privacy.pdf">FormSubmit</a>. It does not subscribe you to newsletters or other marketing communications.</p>
-          <button class="btn" type="submit" aria-describedby="contact-status" disabled>Send inquiry <span aria-hidden="true">↗</span></button>
-          <noscript><p class="contact-note">Enable JavaScript to submit the form.</p></noscript>
+          <div class="contact-field"><label for="contact-message">Describe your workflow</label><p class="contact-note" id="contact-message-hint">For example, every Friday we collect the field reports from five sites to prepare the client report.</p><textarea id="contact-message" name="mensaje" rows="4" maxlength="2000" aria-describedby="contact-message-hint" required></textarea></div>
+          <label class="contact-consent" for="contact-consent"><input id="contact-consent" name="consentimiento" type="checkbox" value="Yes, I authorise commercial contact only in relation to this inquiry" required aria-describedby="contact-privacy"><span>I authorize Guillermo Ferrer to use this information to contact me for commercial purposes only in relation to this inquiry.</span></label>
+          <p class="contact-note" id="contact-privacy">Submissions are processed by <a href="https://formsubmit.co/privacy.pdf">FormSubmit</a>. This does not subscribe you to newsletters or other marketing communications.</p>
+          <div class="form-actions"><button class="btn" type="submit" aria-describedby="contact-status" disabled>Send request <span aria-hidden="true">↗</span></button><p class="contact-note" id="contact-status" role="status">Complete the required fields and tick the consent box to send your request. Only the phone number is optional.</p></div>
+          <noscript><p class="contact-note">Enable JavaScript to send the form.</p></noscript>
         </form>
       </div>
     </section>
   </main>
-  <footer><div class="wrap"><span>Next Shift · Agentic AI implementation</span><a href="#top">Back to top ↑</a></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-main"><img src="images/next-shift-mark.svg" width="28" height="28" alt="">Next Shift</span><span class="brand-by">by <img src="images/tictap-official.svg" width="180" height="69" alt="TicTAP"></span></a><nav class="footer-links" aria-label="Footer links"><a href="#about">Team</a><a href="#faq">FAQs</a><a href="#top">Back to top ↑</a></nav></div></footer>
 </body>
 </html>

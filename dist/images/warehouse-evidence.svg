@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="wall" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#d5d6ce"/><stop offset="1" stop-color="#8c9594"/></linearGradient>
+    <linearGradient id="floor" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#687371"/><stop offset="1" stop-color="#aaaa9e"/></linearGradient>
+    <linearGradient id="interior" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#162023"/><stop offset="1" stop-color="#495450"/></linearGradient>
+    <pattern id="blocks" width="106" height="44" patternUnits="userSpaceOnUse"><path d="M0 0H106M0 22H106M14 0V22M68 22V44" fill="none" stroke="#64716f" stroke-opacity=".23"/></pattern>
+  </defs>
+  <path fill="url(#wall)" d="M0 0h480v274H0z"/><path fill="url(#blocks)" d="M0 0h480v274H0z"/>
+  <path fill="url(#floor)" d="M0 273l480-11v58H0z"/><path d="m0 308 480-34M356 269l56 51" fill="none" stroke="#4f5b58" stroke-opacity=".45"/>
+  <path fill="#616b68" d="M68 57h201v211H68z"/><path fill="#a7aba2" d="M72 58h6v210h-6zM78 60h183v5H78z"/>
+  <path fill="url(#interior)" d="M78 65h182v203H78z"/><path fill="#58615a" d="M133 229l127-9v48H78z"/>
+  <path d="M144 112v112m63-112v108m-64-88h66m-66 43h66m-66 36h66" fill="none" stroke="#899086" stroke-width="3"/>
+  <path fill="#a08a6d" d="M151 116h26v15h-26zm31 4h17v11h-17zm-27 38h35v16h-35zm-5 37h20v15h-20z"/>
+  <path fill="#74817e" stroke="#505c5b" d="m78 65 50 15v167l-50 21z"/><path d="M113 172l9-2" stroke="#d6d2bf" stroke-width="3"/>
+  <path fill="#525f5d" d="M260 60h8v208h-8z"/><path d="M0 51h480" stroke="#737d79" stroke-width="2"/><path d="M100 21h105l7 12H94z" fill="#e4e5d8"/>
+  <path d="M14 14h23m-23 0v23m452-23h-23m23 0v23M14 306h23m-23 0v-23m452 23h-23m23 0v-23" fill="none" stroke="#f6f8f3" stroke-opacity=".75" stroke-width="2"/>
+</svg>
