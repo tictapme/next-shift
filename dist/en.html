@@ -54,35 +54,36 @@
             </dl>
             <details class="source"><summary>View the original demo record · WO-148</summary><p>Shift note: “Casing inspected. No running test recorded at handover.”</p></details>
           </div>
-          <p class="supervisor-foot">Fictional data · The summary supports the handover conversation</p>
+          <p class="supervisor-foot">The summary supports the handover conversation</p>
         </div>
       </div>
     </section>
 
     <section class="section examples" id="examples" aria-labelledby="examples-title">
       <div class="wrap">
-        <div class="section-head"><p class="eyebrow"><span>01</span> / Demonstrations</p><h2 id="examples-title">What happens after the field record</h2><p>Fictional examples for maintenance contractors, industrial plants, facility services and health and safety (HSE) teams.</p></div>
+        <div class="section-head"><p class="eyebrow"><span>01</span> / Demonstrations</p><h2 id="examples-title">What happens after the field record</h2><p>Workflow examples for maintenance contractors, industrial plants, facility services and health and safety (HSE) teams.</p></div>
         <section class="example-group" id="maintenance" aria-labelledby="maintenance-title">
           <h3 class="group-heading" id="maintenance-title">Maintenance</h3>
           <div class="example-grid">
             <article class="example" data-demo>
               <span class="badge consulting">Next Shift by TicTAP implementation example</span>
               <h4>From voice note to service report</h4>
-              <ol class="demo-flow">
-                <li data-stage><b>Dictation</b><span>“I replaced the valve gasket and checked that the valve closed properly.”</span></li>
-                <li data-stage><b>Field record in TicTAP</b><span>Note Taker fills in the form fields. The technician checks, corrects and validates the record.</span></li>
-                <li data-stage><b>Client report</b><span>The validated record feeds the agreed report template. <mark>Labour hours and materials: awaiting confirmation</mark>.</span></li>
+              <svg class="demo-diagram" viewBox="0 0 480 168" aria-hidden="true" focusable="false"><use href="images/demo-diagrams.svg#voice-report"/></svg>
+              <ol class="demo-flow demo-flow-inline" role="list">
+                <li data-stage><b>Dictation</b><span>“I replaced the valve gasket.”</span></li>
+                <li data-stage><b>TicTAP record</b><span>Note Taker fills it in; the technician checks it.</span></li>
+                <li data-stage><b>Client report</b><span><mark>To confirm: hours and materials</mark>.</span></li>
               </ol>
-              <p class="measure"><strong>What we measure.</strong> Office minutes per report, records sent back for correction and time until the client documentation is ready.</p>
+              <p class="measure"><strong>What we measure:</strong> minutes per report · records sent back · time to delivery.</p>
               <p class="product-note"><span class="badge available">Available in TicTAP</span> <a href="https://www.tictap.me/en/note-taker/">Note Taker for maintenance forms</a>.</p>
             </article>
             <article class="example" id="shift-handover" data-demo>
               <span class="badge consulting">Next Shift by TicTAP implementation example</span>
               <h4>Preparing a shift handover</h4>
-              <p>We bring work orders and notes into one view so the outgoing and incoming shifts can cross-check them together.</p>
-              <dl class="record" data-stage><div><dt>Asset</dt><dd>Pump B-14</dd></div><div><dt>Last action</dt><dd>Visual check of the casing</dd></div><div><dt>Outstanding</dt><dd>Confirm the test status</dd></div></dl>
-              <div class="exception" data-stage><strong>Two sources disagree</strong><ul><li><b>Work order WO-148:</b> no test recorded.</li><li><b>Shift note:</b> test carried out; result not attached.</li></ul><p>Both versions are shown. The team checks the source records and decides what to do next.</p></div>
-              <p class="measure"><strong>What we measure.</strong> Preparation time, queries to the previous shift and outstanding tasks missed when the summary is checked against the source records.</p>
+              <svg class="demo-diagram" viewBox="0 0 480 168" aria-hidden="true" focusable="false"><use href="images/demo-diagrams.svg#handover"/></svg>
+              <div class="handover-compare" data-stage><div><b>Work order WO-148</b><span>No test recorded.</span></div><div><b>Shift note</b><span>Test done; no result attached.</span></div></div>
+              <p class="exception" data-stage><strong>Pump B-14 · To confirm.</strong> Both shifts cross-check the sources.</p>
+              <p class="measure"><strong>What we measure:</strong> preparation time · queries to the previous shift · outstanding tasks missed.</p>
             </article>
           </div>
         </section>
@@ -93,13 +94,19 @@
               <span class="badge consulting">Next Shift by TicTAP implementation example</span>
               <h4>From observation to corrective action follow-up</h4>
               <ol class="demo-flow">
-                <li data-stage><b>Inspection</b><span>“Signage is missing at the entrance to Warehouse 2.” The inspector attaches a photo.</span></li>
-                <li data-stage><b>Action record</b><span>AI brings together the original wording, location and evidence. The competent professional assesses the situation and sets the corrective action, owner and due date.</span></li>
-                <li data-stage><b>New evidence</b><span>When a follow-up photo arrives, the record moves to <mark>Pending verification</mark>. The responsible professional checks the evidence and decides whether to approve closure.</span></li>
+                <li data-stage><b>Finding + photo</b><span>“Signage is missing at the entrance to Warehouse 2.”</span></li>
+                <li data-stage><b>Action assigned</b><span>AI drafts the record. The professional sets the action, owner and due date.</span></li>
+                <li data-stage><b>New evidence → <mark>Pending verification</mark></b><span>The professional checks the photo and decides whether to approve closure.</span></li>
               </ol>
-              <p class="measure"><strong>What we measure.</strong> Time to assign an owner, overdue corrective actions and actions still awaiting verification.</p>
+              <p class="measure"><strong>What we measure:</strong> time to assign an owner · overdue actions · pending verifications.</p>
             </div>
-            <figure class="evidence"><img src="images/warehouse-evidence.svg" width="480" height="320" alt="Illustration of the Warehouse 2 entrance with no signage on the wall next to the door" loading="lazy"><figcaption><b>Warehouse 2 · Initial evidence</b><span>Simulated attachment for this demonstration</span></figcaption></figure>
+            <figure class="evidence">
+              <div class="evidence-pair">
+                <div><img src="images/warehouse-evidence.svg" width="480" height="320" alt="Entrance without signage" loading="lazy"><b>Initial finding</b></div>
+                <div><img src="images/warehouse-evidence.svg" width="480" height="320" alt="The same entrance with a sign beside the door" loading="lazy"><span class="evidence-sign" aria-hidden="true">!</span><b>Follow-up photo</b></div>
+              </div>
+              <figcaption><b>Warehouse 2 · <mark>Pending verification</mark></b><span>Illustrations for this demonstration</span></figcaption>
+            </figure>
           </article>
         </section>
         <section class="example-group" id="tictap" aria-labelledby="stock-title">
@@ -109,13 +116,13 @@
               <span class="badge available">Available in TicTAP</span>
               <h4>Find and issue stock by voice</h4>
               <blockquote>“I’m taking three tubes of kitchen and bathroom silicone.”</blockquote>
-              <p>Note Taker interprets a stock issue of three units and looks up the item in the selected storeroom. <a href="https://www.tictap.me/en/plugin-stock/">See the TicTAP Stock plugin</a>.</p>
-              <p class="product-note"><span class="badge consulting">Tailored extension with Next Shift by TicTAP</span> We can assess how to allocate that material to a specific work order or connect the movement to your ERP. We agree the scope after checking what is feasible.</p>
+              <p><a href="https://www.tictap.me/en/plugin-stock/">See the TicTAP Stock plugin</a>.</p>
+              <p class="product-note"><span class="badge consulting">Tailored extension with Next Shift by TicTAP</span> We assess work order allocation or ERP integration before agreeing the scope.</p>
             </div>
             <div class="stock-demo">
-              <p class="eyebrow">Demo movement / Selected storeroom</p>
-              <dl class="record" data-stage><div><dt>Movement</dt><dd>Stock issue · 3 units</dd></div><div><dt>Suggested item</dt><dd>SIL-CB-300 · White silicone</dd></div><div><dt>Another match</dt><dd>SIL-CT-300 · Clear silicone</dd></div></dl>
-              <p class="exception" data-stage><strong>To confirm in this demo:</strong> the operator chooses the item before recording the stock issue.</p>
+              <svg class="demo-diagram" viewBox="0 0 480 168" aria-hidden="true" focusable="false"><use href="images/demo-diagrams.svg#stock"/></svg>
+              <dl class="record" data-stage><div><dt>Proposed stock issue</dt><dd>3 units · Selected storeroom</dd></div><div><dt>Matches</dt><dd>SIL-CB-300 · White<br>SIL-CT-300 · Clear</dd></div></dl>
+              <p class="exception" data-stage><strong>To confirm:</strong> the operator chooses the item.</p>
             </div>
           </article>
         </section>

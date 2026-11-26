@@ -54,37 +54,36 @@
             </dl>
             <details class="source"><summary>Ver el parte original de ejemplo · OT-148</summary><p>Nota de turno: «Carcasa revisada. No consta la prueba en marcha al entregar el turno».</p></details>
           </div>
-          <p class="supervisor-foot">Datos ficticios · El resumen acompaña la conversación de relevo</p>
+          <p class="supervisor-foot">El resumen acompaña la conversación de relevo</p>
         </div>
       </div>
     </section>
 
     <section class="section examples" id="ejemplos" aria-labelledby="examples-title">
       <div class="wrap">
-        <div class="section-head"><p class="eyebrow"><span>01</span> / Demostraciones</p><h2 id="examples-title">El trabajo que sigue al registro de campo</h2><p>Ejemplos ficticios para mantenedoras, plantas, empresas de servicios a instalaciones (facility services) y equipos de prevención de riesgos laborales (PRL).</p></div>
+        <div class="section-head"><p class="eyebrow"><span>01</span> / Demostraciones</p><h2 id="examples-title">El trabajo que sigue al registro de campo</h2><p>Ejemplos de flujos para mantenedoras, plantas, empresas de servicios a instalaciones (facility services) y equipos de prevención de riesgos laborales (PRL).</p></div>
         <section class="example-group" id="mantenimiento" aria-labelledby="maintenance-title">
           <h3 class="group-heading" id="maintenance-title">Mantenimiento</h3>
           <div class="example-grid">
             <article class="example" data-demo>
               <span class="badge consulting">Ejemplo de implantación con Next Shift by TicTAP</span>
               <h4>Del parte de voz al informe de servicio</h4>
-              <ol class="demo-flow">
-                <li data-stage><b>Dictado</b><span>«Cambié la junta de la válvula y revisé el cierre».</span></li>
-                <li data-stage><b>Parte en TicTAP</b><span>Note Taker prepara los campos. El técnico revisa, corrige y valida el parte.</span></li>
-                <li data-stage><b>Informe del cliente</b><span>El parte validado alimenta la plantilla acordada. <mark>Horas y material: pendientes de confirmar</mark>.</span></li>
+              <svg class="demo-diagram" viewBox="0 0 480 168" aria-hidden="true" focusable="false"><use href="images/demo-diagrams.svg#voice-report"/></svg>
+              <ol class="demo-flow demo-flow-inline" role="list">
+                <li data-stage><b>Dictado</b><span>«Cambié la junta de la válvula».</span></li>
+                <li data-stage><b>Parte TicTAP</b><span>Note Taker lo rellena; el técnico valida.</span></li>
+                <li data-stage><b>Informe del cliente</b><span><mark>Por confirmar: horas y material</mark>.</span></li>
               </ol>
-              <p class="measure"><strong>Qué medimos.</strong> Minutos de oficina por informe, partes devueltos y tiempo hasta que la documentación esté lista para el cliente.</p>
+              <p class="measure"><strong>Qué medimos:</strong> minutos por informe · partes devueltos · tiempo hasta la entrega.</p>
               <p class="product-note"><span class="badge available">Disponible en TicTAP</span> <a href="https://www.tictap.me/note-taker/">Note Taker para formularios de mantenimiento</a>.</p>
             </article>
             <article class="example" id="relevo" data-demo>
               <span class="badge consulting">Ejemplo de implantación con Next Shift by TicTAP</span>
               <h4>Preparar el relevo de turno</h4>
-              <p>Reunimos órdenes y notas en una vista para que el turno saliente y el entrante las cotejen juntos.</p>
-              <dl class="record" data-stage>
-                <div><dt>Activo</dt><dd>Bomba B-14</dd></div><div><dt>Última actuación</dt><dd>Revisión visual de la carcasa</dd></div><div><dt>Pendiente</dt><dd>Confirmar el estado de la prueba</dd></div>
-              </dl>
-              <div class="exception" data-stage><strong>Dos fuentes discrepan</strong><ul><li><b>Orden OT-148:</b> no consta la prueba.</li><li><b>Nota de relevo:</b> prueba realizada, sin resultado adjunto.</li></ul><p>Se muestran ambas versiones. El equipo comprueba el original y decide cómo continuar.</p></div>
-              <p class="measure"><strong>Qué medimos.</strong> Tiempo de preparación, consultas al turno anterior y pendientes omitidos al cotejar el resumen con los partes.</p>
+              <svg class="demo-diagram" viewBox="0 0 480 168" aria-hidden="true" focusable="false"><use href="images/demo-diagrams.svg#handover"/></svg>
+              <div class="handover-compare" data-stage><div><b>Orden OT-148</b><span>No consta la prueba.</span></div><div><b>Nota de relevo</b><span>Prueba hecha, sin resultado adjunto.</span></div></div>
+              <p class="exception" data-stage><strong>Bomba B-14 · Por confirmar.</strong> Ambos turnos cotejan las fuentes.</p>
+              <p class="measure"><strong>Qué medimos:</strong> tiempo de preparación · consultas al turno anterior · pendientes omitidos.</p>
             </article>
           </div>
         </section>
@@ -95,13 +94,19 @@
               <span class="badge consulting">Ejemplo de implantación con Next Shift by TicTAP</span>
               <h4>De la observación al seguimiento</h4>
               <ol class="demo-flow">
-                <li data-stage><b>Inspección</b><span>«Falta señalización en el acceso al almacén 2». La persona que inspecciona adjunta una foto.</span></li>
-                <li data-stage><b>Ficha de seguimiento</b><span>La IA reúne el texto original, la ubicación y la evidencia. El profesional competente valora la situación y decide la medida, el responsable y el plazo.</span></li>
-                <li data-stage><b>Nueva evidencia</b><span>Al llegar una foto posterior, la ficha pasa a <mark>Pendiente de verificar</mark>. El profesional responsable comprueba la evidencia y decide si acepta el cierre.</span></li>
+                <li data-stage><b>Hallazgo + foto</b><span>«Falta señalización en el acceso al almacén 2».</span></li>
+                <li data-stage><b>Acción asignada</b><span>La IA prepara la ficha. El profesional decide medida, responsable y plazo.</span></li>
+                <li data-stage><b>Nueva evidencia → <mark>Pendiente de verificar</mark></b><span>El profesional revisa la foto y decide si acepta el cierre.</span></li>
               </ol>
-              <p class="measure"><strong>Qué medimos.</strong> Tiempo hasta asignar responsable, medidas vencidas y acciones pendientes de verificación.</p>
+              <p class="measure"><strong>Qué medimos:</strong> tiempo de asignación · medidas vencidas · verificaciones pendientes.</p>
             </div>
-            <figure class="evidence"><img src="images/warehouse-evidence.svg" width="480" height="320" alt="Representación del acceso al almacén 2 con la pared junto a la puerta sin señalización" loading="lazy"><figcaption><b>Almacén 2 · Evidencia inicial</b><span>Adjunto simulado para esta demostración</span></figcaption></figure>
+            <figure class="evidence">
+              <div class="evidence-pair">
+                <div><img src="images/warehouse-evidence.svg" width="480" height="320" alt="Acceso sin señalización" loading="lazy"><b>Hallazgo inicial</b></div>
+                <div><img src="images/warehouse-evidence.svg" width="480" height="320" alt="El mismo acceso con un cartel junto a la puerta" loading="lazy"><span class="evidence-sign" aria-hidden="true">!</span><b>Foto de seguimiento</b></div>
+              </div>
+              <figcaption><b>Almacén 2 · <mark>Pendiente de verificar</mark></b><span>Ilustraciones de la demostración</span></figcaption>
+            </figure>
           </article>
         </section>
         <section class="example-group" id="tictap" aria-labelledby="stock-title">
@@ -111,13 +116,13 @@
               <span class="badge available">Disponible en TicTAP</span>
               <h4>Búsqueda y salida de stock por voz</h4>
               <blockquote>«Me llevo tres tubos de silicona para cocinas y baños».</blockquote>
-              <p>Note Taker interpreta una salida de tres unidades y busca el artículo en el inventario de la bodega actual. <a href="https://www.tictap.me/plugin-stock/">Ver el plugin de Stock de TicTAP</a>.</p>
-              <p class="product-note"><span class="badge consulting">Ampliación a medida con Next Shift by TicTAP</span> Podemos estudiar cómo imputar ese consumo a una intervención concreta o conectarlo con vuestro ERP. Acordamos el alcance después de comprobar su viabilidad.</p>
+              <p><a href="https://www.tictap.me/plugin-stock/">Ver el plugin de Stock de TicTAP</a>.</p>
+              <p class="product-note"><span class="badge consulting">Ampliación a medida con Next Shift by TicTAP</span> Estudiamos la imputación a una intervención o la conexión con el ERP antes de acordar el alcance.</p>
             </div>
             <div class="stock-demo">
-              <p class="eyebrow">Movimiento de ejemplo / Bodega actual</p>
-              <dl class="record" data-stage><div><dt>Operación</dt><dd>Salida · 3 unidades</dd></div><div><dt>Referencia propuesta</dt><dd>SIL-CB-300 · Silicona blanca</dd></div><div><dt>Otra coincidencia</dt><dd>SIL-CT-300 · Silicona transparente</dd></div></dl>
-              <p class="exception" data-stage><strong>Por confirmar en la demo:</strong> el operario elige la referencia antes de registrar la salida.</p>
+              <svg class="demo-diagram" viewBox="0 0 480 168" aria-hidden="true" focusable="false"><use href="images/demo-diagrams.svg#stock"/></svg>
+              <dl class="record" data-stage><div><dt>Salida propuesta</dt><dd>3 unidades · Bodega actual</dd></div><div><dt>Coincidencias</dt><dd>SIL-CB-300 · Blanca<br>SIL-CT-300 · Transparente</dd></div></dl>
+              <p class="exception" data-stage><strong>Por confirmar:</strong> el operario elige la referencia.</p>
             </div>
           </article>
         </section>
